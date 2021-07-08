@@ -24,7 +24,7 @@ html_temp = """
 st.markdown(html_temp,unsafe_allow_html=True)
   
 st.title("""
-        Collor Palette
+        Various shades of RED color
          """
          )
 file= st.file_uploader("Please upload image", type=("jpg", "png"))
