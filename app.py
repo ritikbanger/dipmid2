@@ -1,3 +1,4 @@
+%%writefile app.py
 import streamlit as st 
 from PIL import Image
 import pickle
@@ -24,7 +25,7 @@ html_temp = """
 st.markdown(html_temp,unsafe_allow_html=True)
   
 st.title("""
-        Various shades of RED color
+        Collor Palette
          """
          )
 file= st.file_uploader("Please upload image", type=("jpg", "png"))
@@ -51,7 +52,7 @@ else:
   st.image(file,caption='Uploaded Image.', use_column_width=True)
     
 if st.button("Change Color"):
-  result=import_and_predict(image)
+  result=import_and_predict()
   
 if st.button("About"):
   st.header("Developed by Ritik Banger")
