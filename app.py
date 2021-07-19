@@ -51,7 +51,7 @@ else:
   st.image(file,caption='Uploaded Image.', use_column_width=True)
     
 if st.button("Change Color"):
-  result=import_and_predict()
+  result=import_and_predict(image_data)
   
 if st.button("About"):
   st.header("Developed by Ritik Banger")
